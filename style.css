@@ -3,6 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+ul,ol,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
 
 img {
     max-width: 100%;
@@ -12,11 +19,51 @@ img {
     column-count: 2;
 
 }
+.container{
+    padding: 20px;
+}
 
 @media (max-width:576px) {
     .column-2 {
         column-count: 1;
+
         text-align: justify;
 
     } 
+}
+
+.data-box {
+    border: none;
+    border-bottom: 1px solid rgba(196, 196, 196, 1) ;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    
+}
+.message-box {
+    padding-bottom: 120px;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+    
+}
+
+.web-icon {
+    padding: 10px;
+    border: solid currentColor 1px ;
+    border-radius: 999px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container {
+    width: fit-content;
+    gap: 20px;
+    padding: 0px;
+
 }
